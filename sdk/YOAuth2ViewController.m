@@ -44,7 +44,6 @@
 {
     [super viewDidLoad];
 
-    [self setTitle:@"Sign-In"];
     NSURL *url = [NSURL URLWithString:self.authURI];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
