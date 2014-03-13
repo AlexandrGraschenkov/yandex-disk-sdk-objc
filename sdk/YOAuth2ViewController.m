@@ -100,7 +100,12 @@
 
 - (NSString *)authURI
 {
-    return [NSString stringWithFormat:@"https://oauth.yandex.ru/authorize?response_type=token&client_id=%@&display=popup", self.delegate.clientID];
+    NSString *language = [[NSBundle mainBundle] preferredLocalizations].firstObject;
+    if ([language isEqualToString:@"ru"]) {
+        return [NSString stringWithFormat:@"https://oauth.yandex.ru/authorize?response_type=token&client_id=%@&display=popup", self.delegate.clientID];
+        
+    }
+    return [NSString stringWithFormat:@"https://oauth.yandex.com/authorize?response_type=token&client_id=%@&display=popup", self.delegate.clientID];
 }
 
 - (void)handleResult
