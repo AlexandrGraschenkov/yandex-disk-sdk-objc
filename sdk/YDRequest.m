@@ -197,8 +197,18 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
         [self cancel];
         return;
     }
-
-    UInt64 expectedContentLength = self.lastResponse.expectedContentLength;
+    
+    if (self.lastResponse.expectedContentLength > NSUIntegerMax) {
+        NSError *error = [NSError errorWithDomain:NSURLErrorDomain
+                                             code:NSURLErrorDataLengthExceedsMaximum
+                                         userInfo:nil];
+        [self closeConnection];
+        [self removeFileIfExist];
+        [self callDelegateWithError:error];
+        return;
+    }
+    
+    NSUInteger expectedContentLength = self.lastResponse.expectedContentLength;
     if (expectedContentLength == NSURLResponseUnknownLength) {
         expectedContentLength = 0;
     }
