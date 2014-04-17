@@ -261,7 +261,7 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
     }
     else {
         if (self.receivedData == nil) {
-            self.receivedData = [NSMutableData dataWithCapacity:(NSUInteger)expectedContentLength];
+            self.receivedData = [NSMutableData dataWithCapacity:expectedContentLength];
         }
 
         [self.receivedData appendData:data];
