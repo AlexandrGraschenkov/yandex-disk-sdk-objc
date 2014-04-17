@@ -208,7 +208,7 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
         return;
     }
     
-    NSUInteger expectedContentLength = self.lastResponse.expectedContentLength;
+    UInt64 expectedContentLength = self.lastResponse.expectedContentLength;
     if (expectedContentLength == NSURLResponseUnknownLength) {
         expectedContentLength = 0;
     }
@@ -261,7 +261,7 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
     }
     else {
         if (self.receivedData == nil) {
-            self.receivedData = [NSMutableData dataWithCapacity:expectedContentLength];
+            self.receivedData = [NSMutableData dataWithCapacity:(NSUInteger)expectedContentLength];
         }
 
         [self.receivedData appendData:data];
