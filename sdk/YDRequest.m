@@ -250,8 +250,8 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
             if ([exception.name isEqualToString:NSFileHandleOperationException]) {
                 [self closeConnection];
                 [self removeFileIfExist];
-                NSError *error = [NSError errorWithDomain:kYDSessionRequestErrorDomain code:YDRequestErrorCodeFileIO userInfo:exception.userInfo];
-                [self callDelegateWithError:error];
+                NSError *blockError = [NSError errorWithDomain:kYDSessionRequestErrorDomain code:YDRequestErrorCodeFileIO userInfo:exception.userInfo];
+                [self callDelegateWithError:blockError];
                 return;
             }
             else {

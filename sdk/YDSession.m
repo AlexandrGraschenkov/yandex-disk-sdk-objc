@@ -373,22 +373,22 @@
         };
 
         request.didSendBodyData = ^(UInt64 totalBytesWritten, UInt64 totalBytesExpectedToWrite) {
-            NSDictionary *userInfo = @{@"URL": path,
+            NSDictionary *blockUserInfo = @{@"URL": path,
                                        @"totalSent":@(totalBytesWritten),
                                        @"totalExpected":@(totalBytesExpectedToWrite)};
             [[NSNotificationCenter defaultCenter] postNotificationInMainQueueWithName:kYDSessionDidSendPartialDataForFileNotification
                                                                                object:self
-                                                                             userInfo:userInfo];
+                                                                             userInfo:blockUserInfo];
         };
 
         request.didFailBlock = ^(NSError *error) {
-            NSDictionary *userInfo = @{@"uploadPath": path,
+            NSDictionary *blockUserInfo = @{@"uploadPath": path,
                                          @"fromFile": file,
                                             @"error": error};
             [[NSNotificationCenter defaultCenter] postNotificationInMainQueueWithName:kYDSessionDidFailUploadFileNotification
                                                                                object:self
-                                                                             userInfo:userInfo];
-            block([NSError errorWithDomain:error.domain code:error.code userInfo:userInfo]);
+                                                                             userInfo:blockUserInfo];
+            block([NSError errorWithDomain:error.domain code:error.code userInfo:blockUserInfo]);
         };
 
         [request start];
