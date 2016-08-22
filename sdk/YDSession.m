@@ -568,7 +568,7 @@
 + (NSURL *)urlForDiskPath:(NSString *)uri
 {
     uri = [@"https://webdav.yandex.ru" stringByAppendingFormat:([uri hasPrefix:@"/"]?@"%@":@"/%@"), uri];
-    uri = [uri stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    uri = [uri stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLPathAllowedCharacterSet];
 
     return [NSURL URLWithString:uri];
 }
