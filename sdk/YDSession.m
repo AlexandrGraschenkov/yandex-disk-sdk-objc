@@ -305,7 +305,7 @@
     YDMOVERequest *request = [[YDMOVERequest alloc] initWithURL:fromurl];
     [self prepareRequest:request];
 
-    request.destination = [tourl.path stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    request.destination = [tourl.path stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLPathAllowedCharacterSet];
 
     request.callbackQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 
