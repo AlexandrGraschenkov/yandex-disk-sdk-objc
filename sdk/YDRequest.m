@@ -82,10 +82,14 @@
         NSLog(@"%@ failed to build HTTP request.", self);
 		return;
 	}
-
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 	_connection = [[NSURLConnection alloc] initWithRequest:req
 												 delegate:self
 										 startImmediately:YES];
+#pragma clang diagnostic pop
+    
 	if (_connection == nil) {
         NSLog(@"%@ failed to create request connection.", self);
 		return;
