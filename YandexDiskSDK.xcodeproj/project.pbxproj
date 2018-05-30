@@ -677,7 +677,7 @@
 		0F569649175C8EEF00622AB5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Yandex;
 			};
 			buildConfigurationList = 0F56964C175C8EEF00622AB5 /* Build configuration list for PBXProject "YandexDiskSDK" */;
