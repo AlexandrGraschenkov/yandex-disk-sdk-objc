@@ -224,8 +224,6 @@
 		0FEAB839177867BB00E17FFD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0FEAB83A177867BB00E17FFD /* DDXMLTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLTesting.h; sourceTree = "<group>"; };
 		0FEAB83B177867BB00E17FFD /* DDXMLTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDXMLTesting.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		0FEAB83D177867BB00E17FFD /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0FEAB83F177867BB00E17FFD /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0FEAB840177867BB00E17FFD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FEAB841177867BB00E17FFD /* KissXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KissXML.xcodeproj; sourceTree = "<group>"; };
 		0FEAB844177867BB00E17FFD /* KissXML_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KissXML_Prefix.pch; sourceTree = "<group>"; };
@@ -569,8 +567,6 @@
 				0FEAB839177867BB00E17FFD /* AppDelegate.m */,
 				0FEAB83A177867BB00E17FFD /* DDXMLTesting.h */,
 				0FEAB83B177867BB00E17FFD /* DDXMLTesting.m */,
-				0FEAB83C177867BB00E17FFD /* InfoPlist.strings */,
-				0FEAB83E177867BB00E17FFD /* MainMenu.xib */,
 				0FEAB840177867BB00E17FFD /* Info.plist */,
 				0FEAB841177867BB00E17FFD /* KissXML.xcodeproj */,
 				0FEAB844177867BB00E17FFD /* KissXML_Prefix.pch */,
@@ -805,25 +801,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		0FEAB83C177867BB00E17FFD /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0FEAB83D177867BB00E17FFD /* English */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0FEAB83E177867BB00E17FFD /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0FEAB83F177867BB00E17FFD /* English */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		08F3A63920F77369001237CD /* RetailDemo */ = {
