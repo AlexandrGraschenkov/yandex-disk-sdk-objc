@@ -82,7 +82,7 @@
 
     // Write data to stream
     NSInteger bytesWritten = [self.producer write:&buffer_[self.bufferOffset]
-                                        maxLength:self.bufferActualSize - self.bufferOffset];
+                                        maxLength:(NSUInteger)(self.bufferActualSize - self.bufferOffset)];
 
     if (bytesWritten == -1) {   // Stream error
         [self resetProducerStream];

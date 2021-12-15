@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5D85077F5E49E01F3231929F286097529D88F0C3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "96D9025AFDE288BBA479DD9281577FE3E29D729E" : 9223372036854775807,
+    "5D85077F5E49E01F3231929F286097529D88F0C3" : 9223372036854775807,
+    "70A8537565E8EBD1B9D364933832E742DD9D1D11" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "530FD050-482C-4C49-97E0-D0C6D9C561E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "96D9025AFDE288BBA479DD9281577FE3E29D729E" : "..",
+    "5D85077F5E49E01F3231929F286097529D88F0C3" : "YandexDisk\/",
+    "70A8537565E8EBD1B9D364933832E742DD9D1D11" : "YandexDisk\/KissXML\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "sdk",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "sdk.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:doo\/yandex-disk-sdk-objc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5D85077F5E49E01F3231929F286097529D88F0C3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/doo\/KissXML.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "70A8537565E8EBD1B9D364933832E742DD9D1D11"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:doo\/snap-ios-app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "96D9025AFDE288BBA479DD9281577FE3E29D729E"
+    }
+  ]
+}

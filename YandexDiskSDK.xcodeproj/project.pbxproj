@@ -7,6 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		082E4423235094B700C14950 /* YandexSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 082E4421235094B700C14950 /* YandexSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		082E442B235094F500C14950 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAB828177867BB00E17FFD /* DDXMLElementAdditions.m */; };
+		082E442C2350950000C14950 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAB82B177867BB00E17FFD /* NSString+DDXML.m */; };
+		082E442D2350950900C14950 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAB82E177867BB00E17FFD /* DDXMLDocument.m */; };
+		082E442E2350950D00C14950 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAB830177867BB00E17FFD /* DDXMLElement.m */; };
+		082E442F2350951300C14950 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAB832177867BB00E17FFD /* DDXMLNode.m */; };
+		082E44302350951800C14950 /* NSNotificationCenter+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F569700175C9F5900622AB5 /* NSNotificationCenter+Additions.m */; };
+		082E44312350953600C14950 /* DDXMLElementAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEAB827177867BB00E17FFD /* DDXMLElementAdditions.h */; };
+		082E44322350953A00C14950 /* NSString+DDXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEAB82A177867BB00E17FFD /* NSString+DDXML.h */; };
+		082E44332350953D00C14950 /* DDXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEAB82D177867BB00E17FFD /* DDXMLDocument.h */; };
+		082E44342350954100C14950 /* DDXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEAB82F177867BB00E17FFD /* DDXMLElement.h */; };
+		082E44352350954300C14950 /* DDXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEAB831177867BB00E17FFD /* DDXMLNode.h */; };
+		082E44362350954A00C14950 /* NSNotificationCenter+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696FF175C9F5900622AB5 /* NSNotificationCenter+Additions.h */; };
+		082E44382350956E00C14950 /* YOAuth2Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4505091795374100103E8C /* YOAuth2Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		082E44392350956E00C14950 /* YOAuth2Delegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F53D1791769F7D800622F5C /* YOAuth2Delegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		082E443B2350957D00C14950 /* YDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F66BE5C178ED6B900D229B5 /* YDConstants.m */; };
+		082E443C2350957D00C14950 /* YDItemStat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDAA1117605C2500B759EC /* YDItemStat.m */; };
+		082E443D2350957D00C14950 /* YDSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDAA141760617B00B759EC /* YDSession.m */; };
+		082E443E2350958900C14950 /* YDSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FAA6795176F07F400F141E4 /* YDSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		082E443F2350958900C14950 /* YDConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F66BE5B178ED6B900D229B5 /* YDConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		082E44402350958900C14950 /* YDItemStat.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBDAA1017605C2500B759EC /* YDItemStat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		082E44412350958900C14950 /* YDSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBDAA131760617B00B759EC /* YDSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		082E44422350959300C14950 /* YDWebDAVCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F569671175C8F6400622AB5 /* YDWebDAVCommon.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44432350959900C14950 /* YDWebDAVCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F569672175C8F6400622AB5 /* YDWebDAVCommon.m */; };
+		082E4444235095B800C14950 /* YOAuth2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FABF59F176B350600355D74 /* YOAuth2ViewController.m */; };
+		082E4446235095D800C14950 /* YDAbstractResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696D3175C94CE00622AB5 /* YDAbstractResponse.m */; };
+		082E4447235095DE00C14950 /* YDAbstractResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696D2175C94CE00622AB5 /* YDAbstractResponse.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E4448235095EB00C14950 /* YDMultiStatusResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696D4175C94CE00622AB5 /* YDMultiStatusResponse.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E4449235095EF00C14950 /* YDMultiStatusResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696D5175C94CE00622AB5 /* YDMultiStatusResponse.m */; };
+		082E444A235095F300C14950 /* YDPropstatResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696D6175C94CE00622AB5 /* YDPropstatResponse.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E444B235095F600C14950 /* YDPropstatResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696D7175C94CE00622AB5 /* YDPropstatResponse.m */; };
+		082E444C235095FC00C14950 /* YDMKCOLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696CE175C94B100622AB5 /* YDMKCOLRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E444D2350960000C14950 /* YDMKCOLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696CF175C94B100622AB5 /* YDMKCOLRequest.m */; };
+		082E444E2350960400C14950 /* YDMOVERequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBDAA2A1762144C00B759EC /* YDMOVERequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E444F2350960800C14950 /* YDMOVERequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDAA2B1762144C00B759EC /* YDMOVERequest.m */; };
+		082E44502350960C00C14950 /* YDDeleteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696CA175C947B00622AB5 /* YDDeleteRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44512350961000C14950 /* YDDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696CB175C947B00622AB5 /* YDDeleteRequest.m */; };
+		082E44522350961600C14950 /* YDPROPFINDRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696AC175C935B00622AB5 /* YDPROPFINDRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44532350961A00C14950 /* YDPROPFINDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696AD175C935B00622AB5 /* YDPROPFINDRequest.m */; };
+		082E44542350962700C14950 /* YDProp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696B0175C938400622AB5 /* YDProp.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44552350962700C14950 /* YDLongLongProp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696B4175C938400622AB5 /* YDLongLongProp.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44562350962700C14950 /* YDResourceTypeProp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696B8175C938400622AB5 /* YDResourceTypeProp.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44572350962700C14950 /* YDDateRFC822Prop.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696BA175C938400622AB5 /* YDDateRFC822Prop.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44582350963500C14950 /* YDProp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696B1175C938400622AB5 /* YDProp.m */; };
+		082E44592350963500C14950 /* YDLongLongProp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696B5175C938400622AB5 /* YDLongLongProp.m */; };
+		082E445A2350963500C14950 /* YDResourceTypeProp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696B9175C938400622AB5 /* YDResourceTypeProp.m */; };
+		082E445B2350963500C14950 /* YDDateRFC822Prop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696BB175C938400622AB5 /* YDDateRFC822Prop.m */; };
+		082E445C2350963E00C14950 /* YDFileListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F5696A9175C933000622AB5 /* YDFileListRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E445D2350964200C14950 /* YDFileListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696AA175C933000622AB5 /* YDFileListRequest.m */; };
+		082E445E2350964900C14950 /* YDPROPPATCHRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F569695175C921C00622AB5 /* YDPROPPATCHRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E445F2350964D00C14950 /* YDPROPPATCHRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F569696175C921C00622AB5 /* YDPROPPATCHRequest.m */; };
+		082E44602350965100C14950 /* YDPROPPATCHProp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F569699175C925000622AB5 /* YDPROPPATCHProp.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44612350965400C14950 /* YDPROPPATCHProp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F56969A175C925000622AB5 /* YDPROPPATCHProp.m */; };
+		082E44622350965B00C14950 /* YDDiskPOSTRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F569691175C91FB00622AB5 /* YDDiskPOSTRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44632350965F00C14950 /* YDDiskPOSTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F569692175C91FB00622AB5 /* YDDiskPOSTRequest.m */; };
+		082E44642350966500C14950 /* YDStreamUploadRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F569684175C91A300622AB5 /* YDStreamUploadRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44652350966500C14950 /* YDFileUploadRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F569688175C91A300622AB5 /* YDFileUploadRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44662350966B00C14950 /* YDStreamUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F569685175C91A300622AB5 /* YDStreamUploadRequest.m */; };
+		082E44672350966B00C14950 /* YDFileUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F569689175C91A300622AB5 /* YDFileUploadRequest.m */; };
+		082E44682350966F00C14950 /* YDRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F56967A175C917C00622AB5 /* YDRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E44692350967400C14950 /* YDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F56967B175C917C00622AB5 /* YDRequest.m */; };
+		082E446A2350967700C14950 /* YDDiskRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F56967C175C917C00622AB5 /* YDDiskRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E446B2350967C00C14950 /* YDDiskRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F56967D175C917C00622AB5 /* YDDiskRequest.m */; };
+		082E446C2350967F00C14950 /* YDMultistatusRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F56967E175C917C00622AB5 /* YDMultistatusRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		082E446D2350968400C14950 /* YDMultistatusRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F56967F175C917C00622AB5 /* YDMultistatusRequest.m */; };
+		082E446E235096C100C14950 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F569659175C8EEF00622AB5 /* Foundation.framework */; };
+		082E44702350977100C14950 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 082E446F2350977100C14950 /* libxml2.tbd */; };
+		082E44B82350A05D00C14950 /* YOAuth2ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FABF59E176B350600355D74 /* YOAuth2ViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		082E44B92350A06F00C14950 /* YOAuth2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FABF59F176B350600355D74 /* YOAuth2ViewController.m */; };
 		0F45050A1795374100103E8C /* YOAuth2Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4505091795374100103E8C /* YOAuth2Protocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F66BE5D178ED6B900D229B5 /* YDConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F66BE5B178ED6B900D229B5 /* YDConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F66BE5E178ED6B900D229B5 /* YDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F66BE5C178ED6B900D229B5 /* YDConstants.m */; };
@@ -18,7 +87,6 @@
 		0FEAB894177893E400E17FFD /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAB830177867BB00E17FFD /* DDXMLElement.m */; };
 		0FEAB895177893E400E17FFD /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEAB832177867BB00E17FFD /* DDXMLNode.m */; };
 		0FEAB8991778940C00E17FFD /* NSNotificationCenter+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F569700175C9F5900622AB5 /* NSNotificationCenter+Additions.m */; };
-		0FEAB89C1778940C00E17FFD /* YOAuth2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FABF59F176B350600355D74 /* YOAuth2ViewController.m */; };
 		0FEAB89D1778940C00E17FFD /* YDAbstractResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696D3175C94CE00622AB5 /* YDAbstractResponse.m */; };
 		0FEAB89E1778940C00E17FFD /* YDMultiStatusResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696D5175C94CE00622AB5 /* YDMultiStatusResponse.m */; };
 		0FEAB89F1778940C00E17FFD /* YDPropstatResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5696D7175C94CE00622AB5 /* YDPropstatResponse.m */; };
@@ -110,7 +178,6 @@
 		0FEAB93C177895F300E17FFD /* YDSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FAA6795176F07F400F141E4 /* YDSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FEAB93D177895F300E17FFD /* YDSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBDAA131760617B00B759EC /* YDSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FEAB94D17789A4A00E17FFD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEAB94C17789A4A00E17FFD /* libxml2.dylib */; };
-		0FEAB94E17789BAF00E17FFD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEAB94C17789A4A00E17FFD /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +203,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		082E441F235094B700C14950 /* YandexSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YandexSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		082E4421235094B700C14950 /* YandexSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YandexSDK.h; sourceTree = "<group>"; };
+		082E4422235094B700C14950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082E446F2350977100C14950 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		0F4505091795374100103E8C /* YOAuth2Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOAuth2Protocol.h; sourceTree = "<group>"; };
 		0F53D1791769F7D800622F5C /* YOAuth2Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = YOAuth2Delegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		0F569654175C8EEF00622AB5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -225,8 +296,6 @@
 		0FEAB839177867BB00E17FFD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0FEAB83A177867BB00E17FFD /* DDXMLTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLTesting.h; sourceTree = "<group>"; };
 		0FEAB83B177867BB00E17FFD /* DDXMLTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDXMLTesting.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		0FEAB83D177867BB00E17FFD /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0FEAB83F177867BB00E17FFD /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0FEAB840177867BB00E17FFD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FEAB841177867BB00E17FFD /* KissXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KissXML.xcodeproj; sourceTree = "<group>"; };
 		0FEAB844177867BB00E17FFD /* KissXML_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KissXML_Prefix.pch; sourceTree = "<group>"; };
@@ -234,14 +303,23 @@
 		0FEAB86E1778935B00E17FFD /* libdisk-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libdisk-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FEAB8C1177894CE00E17FFD /* Disk-SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Disk-SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FEAB94C17789A4A00E17FFD /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		47D9E2631EB8AF17005F5064 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		082E441C235094B700C14950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082E44702350977100C14950 /* libxml2.tbd in Frameworks */,
+				082E446E235096C100C14950 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FEAB86B1778935B00E17FFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FEAB94E17789BAF00E17FFD /* libxml2.dylib in Frameworks */,
 				0FEAB86F1778935B00E17FFD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +337,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		082E4420235094B700C14950 /* YandexSDK */ = {
+			isa = PBXGroup;
+			children = (
+				082E4421235094B700C14950 /* YandexSDK.h */,
+				082E4422235094B700C14950 /* Info.plist */,
+			);
+			path = YandexSDK;
+			sourceTree = "<group>";
+		};
 		0F45050B179548B900103E8C /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +361,7 @@
 			children = (
 				0FB07C31176AFE2200FF0AE5 /* external */,
 				0F56965A175C8EEF00622AB5 /* sdk */,
+				082E4420235094B700C14950 /* YandexSDK */,
 				0F569653175C8EEF00622AB5 /* Frameworks */,
 				0F569652175C8EEF00622AB5 /* Products */,
 			);
@@ -284,6 +372,7 @@
 			children = (
 				0FEAB86E1778935B00E17FFD /* libdisk-ios.a */,
 				0FEAB8C1177894CE00E17FFD /* Disk-SDK.framework */,
+				082E441F235094B700C14950 /* YandexSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -291,6 +380,8 @@
 		0F569653175C8EEF00622AB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47D9E2631EB8AF17005F5064 /* libxml2.tbd */,
+				082E446F2350977100C14950 /* libxml2.tbd */,
 				0FEAB94C17789A4A00E17FFD /* libxml2.dylib */,
 				0F569654175C8EEF00622AB5 /* Cocoa.framework */,
 				0FB07BDE176AEF2600FF0AE5 /* Foundation.framework */,
@@ -569,8 +660,6 @@
 				0FEAB839177867BB00E17FFD /* AppDelegate.m */,
 				0FEAB83A177867BB00E17FFD /* DDXMLTesting.h */,
 				0FEAB83B177867BB00E17FFD /* DDXMLTesting.m */,
-				0FEAB83C177867BB00E17FFD /* InfoPlist.strings */,
-				0FEAB83E177867BB00E17FFD /* MainMenu.xib */,
 				0FEAB840177867BB00E17FFD /* Info.plist */,
 				0FEAB841177867BB00E17FFD /* KissXML.xcodeproj */,
 				0FEAB844177867BB00E17FFD /* KissXML_Prefix.pch */,
@@ -590,6 +679,48 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		082E441A235094B700C14950 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082E44412350958900C14950 /* YDSession.h in Headers */,
+				082E445C2350963E00C14950 /* YDFileListRequest.h in Headers */,
+				082E4423235094B700C14950 /* YandexSDK.h in Headers */,
+				082E44562350962700C14950 /* YDResourceTypeProp.h in Headers */,
+				082E4447235095DE00C14950 /* YDAbstractResponse.h in Headers */,
+				082E44B82350A05D00C14950 /* YOAuth2ViewController.h in Headers */,
+				082E44552350962700C14950 /* YDLongLongProp.h in Headers */,
+				082E444E2350960400C14950 /* YDMOVERequest.h in Headers */,
+				082E44682350966F00C14950 /* YDRequest.h in Headers */,
+				082E44652350966500C14950 /* YDFileUploadRequest.h in Headers */,
+				082E44542350962700C14950 /* YDProp.h in Headers */,
+				082E44502350960C00C14950 /* YDDeleteRequest.h in Headers */,
+				082E44312350953600C14950 /* DDXMLElementAdditions.h in Headers */,
+				082E44322350953A00C14950 /* NSString+DDXML.h in Headers */,
+				082E44332350953D00C14950 /* DDXMLDocument.h in Headers */,
+				082E44522350961600C14950 /* YDPROPFINDRequest.h in Headers */,
+				082E44422350959300C14950 /* YDWebDAVCommon.h in Headers */,
+				082E44342350954100C14950 /* DDXMLElement.h in Headers */,
+				082E4448235095EB00C14950 /* YDMultiStatusResponse.h in Headers */,
+				082E443F2350958900C14950 /* YDConstants.h in Headers */,
+				082E445E2350964900C14950 /* YDPROPPATCHRequest.h in Headers */,
+				082E44402350958900C14950 /* YDItemStat.h in Headers */,
+				082E44352350954300C14950 /* DDXMLNode.h in Headers */,
+				082E44362350954A00C14950 /* NSNotificationCenter+Additions.h in Headers */,
+				082E443E2350958900C14950 /* YDSessionDelegate.h in Headers */,
+				082E44642350966500C14950 /* YDStreamUploadRequest.h in Headers */,
+				082E44622350965B00C14950 /* YDDiskPOSTRequest.h in Headers */,
+				082E44602350965100C14950 /* YDPROPPATCHProp.h in Headers */,
+				082E446A2350967700C14950 /* YDDiskRequest.h in Headers */,
+				082E444C235095FC00C14950 /* YDMKCOLRequest.h in Headers */,
+				082E44382350956E00C14950 /* YOAuth2Protocol.h in Headers */,
+				082E444A235095F300C14950 /* YDPropstatResponse.h in Headers */,
+				082E44572350962700C14950 /* YDDateRFC822Prop.h in Headers */,
+				082E44392350956E00C14950 /* YOAuth2Delegate.h in Headers */,
+				082E446C2350967F00C14950 /* YDMultistatusRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FEAB8BE177894CE00E17FFD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -636,6 +767,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		082E441E235094B700C14950 /* YandexSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 082E442A235094B700C14950 /* Build configuration list for PBXNativeTarget "YandexSDK" */;
+			buildPhases = (
+				082E441A235094B700C14950 /* Headers */,
+				082E441B235094B700C14950 /* Sources */,
+				082E441C235094B700C14950 /* Frameworks */,
+				082E441D235094B700C14950 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YandexSDK;
+			productName = YandexSDK;
+			productReference = 082E441F235094B700C14950 /* YandexSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		0FEAB86D1778935B00E17FFD /* disk-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FEAB88B1778935C00E17FFD /* Build configuration list for PBXNativeTarget "disk-ios" */;
@@ -677,17 +826,23 @@
 		0F569649175C8EEF00622AB5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Yandex;
+				TargetAttributes = {
+					082E441E235094B700C14950 = {
+						CreatedOnToolsVersion = 11.1;
+						DevelopmentTeam = RE82W8HD52;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
-			buildConfigurationList = 0F56964C175C8EEF00622AB5 /* Build configuration list for PBXProject "sdk" */;
+			buildConfigurationList = 0F56964C175C8EEF00622AB5 /* Build configuration list for PBXProject "YandexDiskSDK" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
-				English,
 			);
 			mainGroup = 0F569648175C8EEF00622AB5;
 			productRefGroup = 0F569652175C8EEF00622AB5 /* Products */;
@@ -702,6 +857,7 @@
 			targets = (
 				0FEAB86D1778935B00E17FFD /* disk-ios */,
 				0FEAB8C0177894CE00E17FFD /* Disk-SDK */,
+				082E441E235094B700C14950 /* YandexSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -717,6 +873,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		082E441D235094B700C14950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FEAB8BF177894CE00E17FFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -728,6 +891,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		082E441B235094B700C14950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				082E44692350967400C14950 /* YDRequest.m in Sources */,
+				082E444B235095F600C14950 /* YDPropstatResponse.m in Sources */,
+				082E442B235094F500C14950 /* DDXMLElementAdditions.m in Sources */,
+				082E442C2350950000C14950 /* NSString+DDXML.m in Sources */,
+				082E443B2350957D00C14950 /* YDConstants.m in Sources */,
+				082E44432350959900C14950 /* YDWebDAVCommon.m in Sources */,
+				082E44532350961A00C14950 /* YDPROPFINDRequest.m in Sources */,
+				082E44512350961000C14950 /* YDDeleteRequest.m in Sources */,
+				082E44632350965F00C14950 /* YDDiskPOSTRequest.m in Sources */,
+				082E444D2350960000C14950 /* YDMKCOLRequest.m in Sources */,
+				082E446B2350967C00C14950 /* YDDiskRequest.m in Sources */,
+				082E442D2350950900C14950 /* DDXMLDocument.m in Sources */,
+				082E442E2350950D00C14950 /* DDXMLElement.m in Sources */,
+				082E44662350966B00C14950 /* YDStreamUploadRequest.m in Sources */,
+				082E446D2350968400C14950 /* YDMultistatusRequest.m in Sources */,
+				082E445D2350964200C14950 /* YDFileListRequest.m in Sources */,
+				082E443D2350957D00C14950 /* YDSession.m in Sources */,
+				082E44B92350A06F00C14950 /* YOAuth2ViewController.m in Sources */,
+				082E445A2350963500C14950 /* YDResourceTypeProp.m in Sources */,
+				082E442F2350951300C14950 /* DDXMLNode.m in Sources */,
+				082E445F2350964D00C14950 /* YDPROPPATCHRequest.m in Sources */,
+				082E4446235095D800C14950 /* YDAbstractResponse.m in Sources */,
+				082E44582350963500C14950 /* YDProp.m in Sources */,
+				082E4449235095EF00C14950 /* YDMultiStatusResponse.m in Sources */,
+				082E44302350951800C14950 /* NSNotificationCenter+Additions.m in Sources */,
+				082E44612350965400C14950 /* YDPROPPATCHProp.m in Sources */,
+				082E444F2350960800C14950 /* YDMOVERequest.m in Sources */,
+				082E44672350966B00C14950 /* YDFileUploadRequest.m in Sources */,
+				082E445B2350963500C14950 /* YDDateRFC822Prop.m in Sources */,
+				082E443C2350957D00C14950 /* YDItemStat.m in Sources */,
+				082E44592350963500C14950 /* YDLongLongProp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FEAB86A1778935B00E17FFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -738,7 +939,6 @@
 				0FEAB894177893E400E17FFD /* DDXMLElement.m in Sources */,
 				0FEAB895177893E400E17FFD /* DDXMLNode.m in Sources */,
 				0FEAB8991778940C00E17FFD /* NSNotificationCenter+Additions.m in Sources */,
-				0FEAB89C1778940C00E17FFD /* YOAuth2ViewController.m in Sources */,
 				0FEAB89D1778940C00E17FFD /* YDAbstractResponse.m in Sources */,
 				0FEAB89E1778940C00E17FFD /* YDMultiStatusResponse.m in Sources */,
 				0FEAB89F1778940C00E17FFD /* YDPropstatResponse.m in Sources */,
@@ -750,6 +950,7 @@
 				0FEAB8A71778940C00E17FFD /* YDResourceTypeProp.m in Sources */,
 				0FEAB8A81778940C00E17FFD /* YDDateRFC822Prop.m in Sources */,
 				0FEAB8AA1778940C00E17FFD /* YDPROPFINDRequest.m in Sources */,
+				082E4444235095B800C14950 /* YOAuth2ViewController.m in Sources */,
 				0FEAB8AB1778940C00E17FFD /* YDFileListRequest.m in Sources */,
 				0FEAB8AD1778940C00E17FFD /* YDPROPPATCHProp.m in Sources */,
 				0FEAB8AE1778940C00E17FFD /* YDPROPPATCHRequest.m in Sources */,
@@ -806,41 +1007,132 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		0FEAB83C177867BB00E17FFD /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0FEAB83D177867BB00E17FFD /* English */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0FEAB83E177867BB00E17FFD /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0FEAB83F177867BB00E17FFD /* English */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
+		082E4424235094B700C14950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RE82W8HD52;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = YandexSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = io.scanbot.YandexSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		082E4425235094B700C14950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RE82W8HD52;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = YandexSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = io.scanbot.YandexSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0F56966C175C8EEF00622AB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -849,11 +1141,14 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -861,24 +1156,42 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -901,11 +1214,13 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 armv7s i386";
+				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64";
 			};
 			name = Debug;
 		};
@@ -925,19 +1240,19 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv7 armv7s i386";
+				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64";
 			};
 			name = Release;
 		};
 		0FEAB8E0177894CE00E17FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -960,6 +1275,8 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.yandex.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
@@ -970,7 +1287,6 @@
 		0FEAB8E1177894CE00E17FFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -990,6 +1306,7 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.yandex.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
@@ -1000,7 +1317,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F56964C175C8EEF00622AB5 /* Build configuration list for PBXProject "sdk" */ = {
+		082E442A235094B700C14950 /* Build configuration list for PBXNativeTarget "YandexSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				082E4424235094B700C14950 /* Debug */,
+				082E4425235094B700C14950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F56964C175C8EEF00622AB5 /* Build configuration list for PBXProject "YandexDiskSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F56966C175C8EEF00622AB5 /* Debug */,

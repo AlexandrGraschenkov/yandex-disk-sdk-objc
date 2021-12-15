@@ -5,6 +5,7 @@
 
 #import "YDDiskRequest.h"
 #import "YDMultiStatusResponse.h"
+#import "DDXML.h"
 
 
 @interface YDMultistatusRequest : YDDiskRequest

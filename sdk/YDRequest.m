@@ -66,7 +66,6 @@
 
 - (void)start
 {
-	NSLog(@"%@ attempts to start", self);
 	if (self.hasActiveConnection == YES) {
         NSLog(@"%@ failed to start because it is already running", self);
 		return;
@@ -83,14 +82,14 @@
         NSLog(@"%@ failed to build HTTP request.", self);
 		return;
 	}
-
-    if ( req.HTTPBody.length > 0) {
-        NSLog(@"BODY: %@", [[NSString alloc] initWithData:req.HTTPBody encoding:NSUTF8StringEncoding]);
-    }
-
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 	_connection = [[NSURLConnection alloc] initWithRequest:req
 												 delegate:self
 										 startImmediately:YES];
+#pragma clang diagnostic pop
+    
 	if (_connection == nil) {
         NSLog(@"%@ failed to create request connection.", self);
 		return;
@@ -164,8 +163,6 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-    NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
-    NSLog(@"%@ did receive response %ld %@", self, (long)statusCode, [NSHTTPURLResponse localizedStringForStatusCode:statusCode]);
 
     if (self.isCanceled) {
         [self cancel];
@@ -199,13 +196,22 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
 
 - (void)connection:(NSURLConnection *)aConnection didReceiveData:(NSData *)data
 {
-	NSLog(@"%@ did receive some data (%llu)", self, _receivedDataLength + data.length);
 
     if (self.isCanceled) {
         [self cancel];
         return;
     }
-
+    
+    if (self.lastResponse.expectedContentLength > NSUIntegerMax) {
+        NSError *error = [NSError errorWithDomain:NSURLErrorDomain
+                                             code:NSURLErrorDataLengthExceedsMaximum
+                                         userInfo:nil];
+        [self closeConnection];
+        [self removeFileIfExist];
+        [self callDelegateWithError:error];
+        return;
+    }
+    
     UInt64 expectedContentLength = self.lastResponse.expectedContentLength;
     if (expectedContentLength == NSURLResponseUnknownLength) {
         expectedContentLength = 0;
@@ -248,8 +254,8 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
             if ([exception.name isEqualToString:NSFileHandleOperationException]) {
                 [self closeConnection];
                 [self removeFileIfExist];
-                NSError *error = [NSError errorWithDomain:kYDSessionRequestErrorDomain code:YDRequestErrorCodeFileIO userInfo:exception.userInfo];
-                [self callDelegateWithError:error];
+                NSError *blockError = [NSError errorWithDomain:kYDSessionRequestErrorDomain code:YDRequestErrorCodeFileIO userInfo:exception.userInfo];
+                [self callDelegateWithError:blockError];
                 return;
             }
             else {
@@ -259,7 +265,7 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
     }
     else {
         if (self.receivedData == nil) {
-            self.receivedData = [NSMutableData dataWithCapacity:expectedContentLength];
+            self.receivedData = [NSMutableData dataWithCapacity:(NSUInteger)expectedContentLength];
         }
 
         [self.receivedData appendData:data];
@@ -288,16 +294,12 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)aConnection
 {
-	NSLog(@"%@ did finish loading.", self);
 
 	[self closeConnection];
 
     if (self.fileHandle != nil) {
         [self.fileHandle closeFile];
         NSLog(@"DATA stored at: %@", self.fileURL.path);
-    }
-    else if (self.receivedData.length > 0) {
-        NSLog(@"DATA: %@", [[NSString alloc] initWithData:self.receivedData encoding:NSUTF8StringEncoding]);
     }
 
     // Call delegate callback

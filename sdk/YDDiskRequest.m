@@ -6,6 +6,7 @@
 #import "YDDiskRequest.h"
 #import "NSNotificationCenter+Additions.h"
 #import "YDConstants.h"
+#import "DDXML.h"
 
 
 @interface YDRequest ()

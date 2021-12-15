@@ -9,6 +9,8 @@
 #   define YD_EXTERN  extern __attribute__((visibility ("default")))
 #endif
 
+#import <Foundation/Foundation.h>
+
 YD_EXTERN NSInteger const kYDSessionErrorUnknown;
 
 YD_EXTERN NSString *const kYDSessionAuthenticationErrorDomain;

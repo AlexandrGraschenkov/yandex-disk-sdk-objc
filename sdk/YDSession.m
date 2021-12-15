@@ -305,7 +305,7 @@
     YDMOVERequest *request = [[YDMOVERequest alloc] initWithURL:fromurl];
     [self prepareRequest:request];
 
-    request.destination = [tourl.path stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    request.destination = [tourl.path stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLPathAllowedCharacterSet];
 
     request.callbackQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 
@@ -373,22 +373,22 @@
         };
 
         request.didSendBodyData = ^(UInt64 totalBytesWritten, UInt64 totalBytesExpectedToWrite) {
-            NSDictionary *userInfo = @{@"URL": path,
+            NSDictionary *blockUserInfo = @{@"URL": path,
                                        @"totalSent":@(totalBytesWritten),
                                        @"totalExpected":@(totalBytesExpectedToWrite)};
             [[NSNotificationCenter defaultCenter] postNotificationInMainQueueWithName:kYDSessionDidSendPartialDataForFileNotification
                                                                                object:self
-                                                                             userInfo:userInfo];
+                                                                             userInfo:blockUserInfo];
         };
 
         request.didFailBlock = ^(NSError *error) {
-            NSDictionary *userInfo = @{@"uploadPath": path,
+            NSDictionary *blockUserInfo = @{@"uploadPath": path,
                                          @"fromFile": file,
                                             @"error": error};
             [[NSNotificationCenter defaultCenter] postNotificationInMainQueueWithName:kYDSessionDidFailUploadFileNotification
                                                                                object:self
-                                                                             userInfo:userInfo];
-            block([NSError errorWithDomain:error.domain code:error.code userInfo:userInfo]);
+                                                                             userInfo:blockUserInfo];
+            block([NSError errorWithDomain:error.domain code:error.code userInfo:blockUserInfo]);
         };
 
         [request start];
@@ -567,9 +567,8 @@
 
 + (NSURL *)urlForDiskPath:(NSString *)uri
 {
+    uri = [uri stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLPathAllowedCharacterSet];
     uri = [@"https://webdav.yandex.ru" stringByAppendingFormat:([uri hasPrefix:@"/"]?@"%@":@"/%@"), uri];
-    uri = [uri stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
-
     return [NSURL URLWithString:uri];
 }
 
